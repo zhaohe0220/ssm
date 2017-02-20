@@ -1,0 +1,24 @@
+package org.seckill.dao;
+
+import org.seckill.entity.SuccessKilled;
+
+/**
+ * Created by yunfei on 2017/2/20.
+ */
+public interface SuccesskilledDao {
+
+    /**
+     * 插入购买明细
+     * @param seckillId
+     * @param userPhone
+     * @return
+     */
+    int insertSuccessKilled(long seckillId,long userPhone);
+
+    /**
+     * 查询SuccessKilled
+     * @param seckillId
+     * @return
+     */
+    SuccessKilled queryByIdWithSeckill(long seckillId);
+}
