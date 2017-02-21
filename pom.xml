@@ -28,8 +28,8 @@
         <dependency>
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
-            <version>5.1.35</version>
-            <scope>runtime</scope>
+            <version>5.1.40</version>
+            <!--<scope>runtime</scope>-->
         </dependency>
         <dependency>
             <groupId>c3p0</groupId>
