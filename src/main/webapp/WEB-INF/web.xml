@@ -6,18 +6,18 @@
 
     <!--配置DispatchServlet-->
     <servlet>
-        <servlet-name>seckill-dispatcher</servlet-name>
+        <servlet-name>seckillDispatcher</servlet-name>
         <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
         <!--配置spring加载的配置文件-->
         <!--MyBatis -> spring -> springMVC-->
         <init-param>
             <param-name>contextConfigLocation</param-name>
-            <param-value>classpath:spring/spring-*.xml</param-value>
+            <param-value>classpath*:spring/spring-*.xml</param-value>
         </init-param>
     </servlet>
 
     <servlet-mapping>
-        <servlet-name>seckill-dispatcher</servlet-name>
+        <servlet-name>seckillDispatcher</servlet-name>
         <url-pattern>/</url-pattern>
     </servlet-mapping>
 
