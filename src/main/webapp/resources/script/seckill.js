@@ -71,9 +71,9 @@ var seckill={
                 //时间完成后回调，获取秒杀地址
                 seckill.handleSeckill(seckillId,seckillBox);
             })
-        }else {
+        }else{
             // 秒杀开始
-            // seckill.handleSeckill(seckillId,seckillBox);
+            seckill.handleSeckill(seckillId,seckillBox);
         }
     },
     // 封装秒杀逻辑
@@ -114,4 +114,4 @@ var seckill={
             })
         }
     }
-}
+};

@@ -6,15 +6,18 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<%
-    String path = request.getContextPath();
-    String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/";
-%>
 <html>
 <head>
     <title>Title</title>
+    <%@include file="WEB-INF/jsp/common/head.jsp"%>
 </head>
 <body>
-<a href="<%=basePath%>seckill/list">跳转</a>
+    <div class="container">
+        <div class="panel panel-default text-center">
+            <div class="panel-body">
+                <a class="btn btn-success" href="/seckill/list">进入秒杀系统</a>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
