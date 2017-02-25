@@ -8,7 +8,7 @@
     <artifactId>seckill</artifactId>
     <version>1.0-SNAPSHOT</version>
 
-    <profiles>
+    <!--<profiles>
         <profile>
             <id>jdk-1.8</id>
             <activation>
@@ -21,19 +21,13 @@
                 <maven.compiler.compilerVersion>1.8</maven.compiler.compilerVersion>
             </properties>
         </profile>
-    </profiles>
+    </profiles>-->
 
     <dependencies>
-        <!--<dependency>
-            <groupId>junit</groupId>
-            <artifactId>junit</artifactId>
-            <version>4.11</version>
-            <scope>test</scope>
-        </dependency>-->
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
-            <version>LATEST</version>
+            <version>4.12</version>
         </dependency>
         <dependency>
             <groupId>org.slf4j</groupId>
@@ -125,6 +119,28 @@
             <groupId>org.springframework</groupId>
             <artifactId>spring-test</artifactId>
             <version>4.3.5.RELEASE</version>
+        </dependency>
+        <dependency>
+            <groupId>redis.clients</groupId>
+            <artifactId>jedis</artifactId>
+            <version>2.9.0</version>
+            <!--<type>jar</type>
+            <scope>compile</scope>-->
+        </dependency>
+        <dependency>
+            <groupId>commons-collections</groupId>
+            <artifactId>commons-collections</artifactId>
+            <version>3.2.1</version>
+        </dependency>
+        <dependency>
+            <groupId>com.dyuproject.protostuff</groupId>
+            <artifactId>protostuff-runtime</artifactId>
+            <version>1.0.8</version>
+        </dependency>
+        <dependency>
+            <groupId>com.dyuproject.protostuff</groupId>
+            <artifactId>protostuff-core</artifactId>
+            <version>1.0.8</version>
         </dependency>
     </dependencies>
 
